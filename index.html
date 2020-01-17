@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Satisfaction Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Public+Sans|Roboto|Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="form" class="container">
+        <header>
+            <h1 id="title">Customer Satisfaction Survey</h1>
+            <p id="description">Thank you for helping us to improve our products and services</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" class="form-control" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">How many times a year do you shop in our store?</label>
+                <input id="number" type="number" class="form-control" placeholder="Enter your number" min="0"
+                    max="150" />
+            </div>
+
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown">Overall, how satisfied or dissatisfied are you with our
+                    company?</label>
+                <select id="dropdown" name="options" class="form-control">
+                    <option disabled selected value>Select satisfaction level</option>
+                    <option value="option1">Very satisfied</option>
+                    <option value="option3">Somewhat satisfied</option>
+                    <option value="option4">Neither satisfied nor dissatisfied</option>
+                    <option value="option2">Somewhat dissatisfied</option>
+                    <option value="option4">Very dissatisfied</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Where do you like shopping more?</p>
+                <label>
+                    <input id="radio1" type="radio" name="group-radio" value="radio1" class="input-radio"
+                        checked />Online
+                </label>
+                <label>
+                    <input id="radio2" type="radio" name="group-radio" value="radio2" class="input-radio" />In store
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Which of the following words would you use to describe our products? Select all that apply.</p>
+                <label>
+                    <input id="checkbox1" type="checkbox" name="group-checkbox" value="checkbox1"
+                        class="input-checkbox" />Reliable
+                </label>
+                <label>
+                    <input id="checkbox2" type="checkbox" name="group-checkbox" value="checkbox2"
+                        class="input-checkbox" />High quality
+                </label>
+                <label>
+                    <input id="checkbox3" type="checkbox" name="group-checkbox" value="checkbox3"
+                        class="input-checkbox" />Useful
+                </label>
+                <label>
+                    <input id="checkbox4" type="checkbox" name="group-checkbox" value="checkbox4"
+                        class="input-checkbox" />Unique
+                </label>
+                <label>
+                    <input id="checkbox5" type="checkbox" name="group-checkbox" value="checkbox5"
+                        class="input-checkbox" />Overpriced
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Do you have any other comments, questions, or concerns?</p>
+                <textarea rows="3" cols="50" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button id="submit" type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+    <header>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
+</header>
